@@ -1,0 +1,25 @@
+name: Weekly Commit Notification
+on:
+  schedule:
+    - cron: '22 11 * * *' # 분-시-일-월-요일
+
+jobs:
+  commit-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Calculate Commit Stats
+        run: |
+          git log --since='1 week ago' --format='%aN' | sort | uniq -c | sort -nr > commit_stats.txt
+          cat commit_stats.txt
+      - name: Send Discord Notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          STATS=$(cat commit_stats.txt)
+          JSON_PAYLOAD=$(jq -n --arg stats "$STATS" '{"content": $stats}')
+          curl -H "Content-Type: application/json" -d "$JSON_PAYLOAD" $DISCORD_WEBHOOK
