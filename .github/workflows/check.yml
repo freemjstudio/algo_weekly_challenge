@@ -1,7 +1,7 @@
 name: Weekly Commit Notification
 on:
   schedule:
-    - cron: '22 11 * * *' # 분-시-일-월-요일
+    - cron: '0 0 * * 0' # 분-시-일-월-요일
 
 jobs:
   commit-stats:
