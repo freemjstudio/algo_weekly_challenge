@@ -1,6 +1,5 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/42884
 def solution(routes):
-    n = len(routes)
     answer = 0 # 최소
 
     routes.sort(key = lambda x:x[1])
