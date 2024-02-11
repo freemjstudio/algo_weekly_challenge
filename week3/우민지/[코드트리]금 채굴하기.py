@@ -3,7 +3,6 @@ array = []
 for _ in range(n):  # n * n 영역
     array.append(list(map(int, input().split())))
 
-
 def check_gold(x, y, s):
     cnt = 0
     for i in range(n):
@@ -11,7 +10,6 @@ def check_gold(x, y, s):
             if abs(x - i) + abs(y - j) <= s:
                 cnt += array[i][j]
     return cnt
-
 
 def get_block(s):  # 마름모 넓이에 속한 block (1*1) 개수 반환
     return s * s + (s + 1) * (s + 1)
