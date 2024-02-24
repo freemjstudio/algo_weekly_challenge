@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/week5/우민지/[코드트리]K번 최댓값으로 이동하기.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +98,10 @@
       <workItem from="1708174159118" duration="18000" />
       <workItem from="1708228639826" duration="45000" />
       <workItem from="1708248369782" duration="2947000" />
+      <workItem from="1708437011556" duration="1516000" />
+      <workItem from="1708513479398" duration="1466000" />
+      <workItem from="1708597372645" duration="296000" />
+      <workItem from="1708736620911" duration="646000" />
     </task>
     <servers />
   </component>
