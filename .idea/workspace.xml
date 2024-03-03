@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="" />
+    <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/week6/우민지/[코드트리] 컨베이어 벨트.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +102,8 @@
       <workItem from="1708513479398" duration="1466000" />
       <workItem from="1708597372645" duration="296000" />
       <workItem from="1708736620911" duration="646000" />
+      <workItem from="1709217665987" duration="4515000" />
+      <workItem from="1709461635587" duration="908000" />
     </task>
     <servers />
   </component>
