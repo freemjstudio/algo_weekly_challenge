@@ -24,7 +24,6 @@ def left_shift(row):
     while r < n:
         if check_line_down(r, r+1) and (r+1) < n:
             r += 1
-
             temp = arr[r][-1]
             for i in range(n-1, -1, -1):
                 arr[r][i] = arr[r][i-1]
@@ -37,14 +36,14 @@ def right_shift(row):
     arr[row][-1] = temp
     r = row
     while r >= 0:
-        if check_line_up(r, r-1) and (r-1) >= 0:
+        if check_line_up(r) and (r-1) >= 0:
             r -= 1
             temp = arr[r][0]
             for i in range(1, n):
                 arr[r][i-1] = arr[r][i]
             arr[r][-1] = temp
     while r < n:
-        if check_line_down(r, r+1) and (r-1) < n:
+        if check_line_down(r) and (r-1) < n:
             r += 1
             temp = arr[r][0]
             for i in range(1, n):
@@ -53,19 +52,18 @@ def right_shift(row):
 
 
 
-def check_line_up(r1, r2):
+def check_line_up(row):
     for i in range(n):
         if arr[row][i] == arr[row-1][i]:
             return True
     return False
 
-def check_line_down(r1, r2):
+def check_line_down(row):
     for i in range(n):
         if arr[row][i] == arr[row+1][i]:
             return True
     return False
 
-def check_line_down(r1, r2):
 
 for _ in range(q):
     r, d = input().split()
