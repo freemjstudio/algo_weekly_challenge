@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/week9/우민지/[CodeTree] 단순한 동전 챙기기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +115,7 @@
       <workItem from="1710760836689" duration="1669000" />
       <workItem from="1710855193865" duration="1501000" />
       <workItem from="1710936708332" duration="25000" />
+      <workItem from="1710938890202" duration="30000" />
     </task>
     <servers />
   </component>

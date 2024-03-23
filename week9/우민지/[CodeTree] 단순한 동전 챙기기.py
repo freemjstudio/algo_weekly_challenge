@@ -1,59 +1,64 @@
 n = int(input())
+m = 3  # 동전은 최소 3개
+
 grid = []
 INF = int(1e9)
 answer = INF
-sx, sy = 0, 0  # start
-ex, ey = n - 1, n - 1  # end
+s = (0, 0)  # start
+e = (n - 1, n - 1)  # end
 
+coin_pos = []  # 동전의 위치, 오름차순 정렬
+selected_pos = []  # 선택한 동전
 for i in range(n):
     line = list(input())
     for j in range(n):
         if line[j] == 'S':
-            sx, sy = i, j
+            s = (i, j)
         if line[j] == 'E':
-            ex, ey = i, j
+            e = (i, j)
 
     grid.append(line)
 
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
-
-visited = [[False] * n for _ in range(n)]
-
-
-def is_in_range(x, y):
-    if (0 <= x < n) and (0 <= y < n):
-        return True
-    return False
+# 동전 오름차순으로 위치 넣기
+for num in range(1, 10):
+    for i in range(n):
+        for j in range(n):
+            if grid[i][j] == str(num):
+                coin_pos.append((i, j))
 
 
-def backtracking(cur_x, cur_y, coins, cnt):
-    for i in range(4):
-        nx, ny = cur_x + dx[i], cur_y + dy[i]
-        if is_in_range(nx, ny):
-            if grid[nx][ny] == 'E':
-                if len(coins) >= 3:
-                    answer = min(answer, cnt)
-                    return
-            elif grid[nx][ny] != '.':
-                if not coins:  # 첫 코인인 경우
-                    coins.append(int(grid[nx][ny]))
-                    backtracking(nx, ny, coins, cnt + 1)
-                else:
-                    if int(coins[-1]) < int(grid[nx][ny]):
-                        if not visited[nx][ny]:
-                            coins.append((int(grid[nx][ny])))
-                            visited[nx][ny] = True
-                            backtracking(nx, ny, coins, cnt + 1)
-                            visited[nx][ny] = False
-                    else:  # . 취급
-                        backtracking(nx, ny, coins, cnt + 1)
-
-            else:  # .
-                backtracking(nx, ny, coins, cnt + 1)
+def get_dist(a, b):
+    (ax, ay) = a
+    (bx, by) = b
+    return abs(ax - bx) + abs(ay - by)
 
 
-if answer != INF:
-    print(answer)
-else:
-    print(-1)
+def calc():
+    temp = get_dist(s, selected_pos[0])
+    for i in range(m - 1):
+        temp += get_dist(selected_pos[i], selected_pos[i + 1])
+    temp += get_dist(selected_pos[m - 1], e)
+    return temp
+
+
+def backtracking(idx, cnt):  # coin index, cnt
+    global answer
+
+    if cnt == m:
+        answer = min(answer, calc())
+        return
+    if idx == len(coin_pos):  # 코인 모든 조합 탐색 완료
+        return
+        # 선택하지 않은 경우
+    backtracking(idx + 1, cnt)
+
+    # 선택한 경우
+    selected_pos.append(coin_pos[idx])
+    backtracking(idx + 1, cnt + 1)
+    selected_pos.pop()  # back
+
+
+backtracking(0, 0)
+if answer == INF:
+    answer = -1
+print(answer)
