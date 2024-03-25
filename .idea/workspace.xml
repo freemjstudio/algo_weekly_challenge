@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/week9/우민지/[CodeTree] 두수의 합.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week8/우민지/[CodeTree] 돌 잘 치우기.py" beforeDir="false" afterPath="$PROJECT_DIR$/week8/우민지/[CodeTree] 돌 잘 치우기.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week9/우민지" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="[프로그래머스] 단속카메라" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algo_weekly_challenge" />
@@ -108,6 +113,15 @@
       <workItem from="1710158185012" duration="1534000" />
       <workItem from="1710251309693" duration="2117000" />
       <workItem from="1710560125803" duration="2234000" />
+      <workItem from="1710642584524" duration="346000" />
+      <workItem from="1710664420173" duration="1170000" />
+      <workItem from="1710760836689" duration="1669000" />
+      <workItem from="1710855193865" duration="1501000" />
+      <workItem from="1710936708332" duration="25000" />
+      <workItem from="1710938890202" duration="30000" />
+      <workItem from="1711096021766" duration="794000" />
+      <workItem from="1711175476175" duration="279000" />
+      <workItem from="1711243976655" duration="684000" />
     </task>
     <servers />
   </component>
