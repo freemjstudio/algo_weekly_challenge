@@ -1,57 +1,65 @@
-n, m, q = map(int, input().split())  # n * m
-arr = []
+## 2차 시도
+n, m, q = map(int, input().split()) # n * m
+arr = [[0] * (m+1) for _ in range(n+1)]
 
-for _ in range(n):
+SHIFT_RIGHT = 0
+SHIFT_LEFT = 1
+
+for row in range(1, n+1):
     line = list(map(int, input().split()))
-    arr.append(line)
+    for col, num in enumerate(line, start = 1):
+        arr[row][col] = num
 
+def shift(row, cur_dir):
+    if cur_dir == SHIFT_RIGHT: # 오른쪽으로 밀어야 하는 경우
+        arr[row].insert(1, arr[row].pop())
+    else:
+        arr[row].insert(m, arr[row].pop(1))
 
-def shift_left(row):  # 왼쪽에서 미는 경우 (오른쪽으로 한칸씩 이동)
-    temp = arr[row][-1]  # 맨 마지막 칸
-
-    for i in range(m - 2, -1, -1):
-        arr[row][i + 1] = arr[row][i]
-    arr[row][0] = temp
-
-
-def shift_right(row):  # 오른쪽에서 미는 경우 (왼쪽으로 한칸씩 이동)
-    temp = arr[row][0]
-    for i in range(0, m - 1, 1):
-        arr[row][i] = arr[row][i + 1]
-    arr[row][-1] = temp
-
-
-def check_up_line(row):  # 현재 column
-    if row >= n - 1:
-        return False
-    for col in range(n):
-        if arr[row][col] == arr[row + 1][col]:
+def check_same_num(row1, row2):
+    for col in range(1, m+1):
+        if arr[row1][col] == arr[row2][col]:
             return True
+    return False
 
+def flip_dir(cur_dir):
+    return SHIFT_RIGHT if cur_dir == SHIFT_LEFT else SHIFT_LEFT
 
-def check_down_line(row):
-    if row <= 0:
-        return False
-    for col in range(n):
-        if arr[row][col] == arr[row - 1][col]:
-            return True
+def simulate(start_row, start_dir):
+    shift(start_row, start_dir)
+    start_dir = flip_dir(start_dir)
 
+    # 전파 시키기 - 위 방향
+    cur_dir = start_dir
+    for row in range(start_row, 1, -1):
+        if check_same_num(row, row-1):
+            shift(row-1, cur_dir)
+            cur_dir = flip_dir(cur_dir)
+        else:
+            break
 
-def simulate(start_row, wind_dir):
-    if wind_dir == "L":  # left 진행
-        print()
-    else:  # right shift
-        print("right")
-
+    # 전파 시키기 - 아래 방향
+    cur_dir = start_dir
+    for row in range(start_row, n):
+        if check_same_num(row, row+1):
+            shift(row+1, cur_dir)
+            cur_dir = flip_dir(cur_dir)
+        else:
+            break
 
 def print_result():
-    for i in range(n):
-        print(*arr[i])
-
+    for row in range(1, n+1):
+        for col in range(1, m+1):
+            print(arr[row][col], end=" ")
+        print()
 
 for _ in range(q):
     row, wind_dir = input().split()
-    row = int(row) - 1
-    # simulate(col, wind_dir)
-shift_right(row)
+    row = int(row)
+    if wind_dir == 'L':
+        cur_dir = SHIFT_RIGHT
+    else:
+        cur_dir = SHIFT_LEFT
+    simulate(row, cur_dir)
+
 print_result()
