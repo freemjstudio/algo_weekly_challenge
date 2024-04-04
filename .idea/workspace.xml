@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/week11/우민지/[CodeTree] 왕실의 기사 대결.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week11/우민지/[프로그래머스]단속카메라.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week10/우민지/[CodeTree] 1차원바람.py" beforeDir="false" afterPath="$PROJECT_DIR$/week10/우민지/[CodeTree] 1차원바람.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +127,11 @@
       <workItem from="1711600360771" duration="1111000" />
       <workItem from="1711624466860" duration="846000" />
       <workItem from="1711661902862" duration="1192000" />
+      <workItem from="1711759874782" duration="244000" />
+      <workItem from="1711774010744" duration="432000" />
+      <workItem from="1711920896241" duration="1224000" />
+      <workItem from="1712062918593" duration="498000" />
+      <workItem from="1712157557107" duration="126000" />
     </task>
     <servers />
   </component>
