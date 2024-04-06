@@ -1,7 +1,5 @@
 # https://school.programmers.co.kr/learn/courses/30/lessons/86971
-
 from collections import deque
-
 
 def solution(n, wires):
     answer = 100
