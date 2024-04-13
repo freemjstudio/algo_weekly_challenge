@@ -1,9 +1,9 @@
 # https://www.codetree.ai/training-field/frequent-problems/problems/tree-kill-all/description?page=1&pageSize=20
 n, m, k, C = map(int, input().split())
-
+answer = 0
 grid = []
 tree_pos = []
-
+kill_pos = []
 for i in range(n):
     line = list(map(int, input().split()))
     for j in range(n):
@@ -63,9 +63,6 @@ def spread():
                 grid[x][y] += temp[x][y]
 
 
-kill_pos = []
-
-
 # 제초제 위치 구하기
 def get_kill_pos():
     global kill_pos
@@ -93,7 +90,8 @@ def get_kill_pos():
 
 # 박멸 진행하기 -> 아직 유효한 제초제 위치에 대해서만 작업하기
 def kill_tree():
-    global answer
+    global answer, kill_pos
+
     update_kill_pos = []
     for kp in kill_pos:
         r, c, C = kp
