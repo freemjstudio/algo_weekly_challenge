@@ -9,6 +9,7 @@ for i in range(n):
     for j in range(n):
         if line[j] > 0:
             tree_pos.append((i, j))
+    grid.append(line)
 
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
