@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/week12/우민지/[LeetCode] Find K Pairs with Smallest Sums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/우민지/[프로그래머스] 징검다리.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week14/우민지" />
       <recent name="$PROJECT_DIR$/week9/우민지" />
     </key>
   </component>
@@ -141,6 +143,10 @@
       <workItem from="1712870857128" duration="1447000" />
       <workItem from="1712935116467" duration="3800000" />
       <workItem from="1713009293520" duration="136000" />
+      <workItem from="1713277501353" duration="2427000" />
+      <workItem from="1713354119036" duration="1459000" />
+      <workItem from="1713629212302" duration="518000" />
+      <workItem from="1713881563869" duration="837000" />
     </task>
     <servers />
   </component>
