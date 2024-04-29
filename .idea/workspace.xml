@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/우민지/[CodeTree] 나무 박멸.py" beforeDir="false" afterPath="$PROJECT_DIR$/week12/우민지/[CodeTree] 나무 박멸.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week14/우민지/[프로그래머스] 징검다리.py" beforeDir="false" afterPath="$PROJECT_DIR$/week14/우민지/[프로그래머스] 징검다리.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week14/우민지" />
       <recent name="$PROJECT_DIR$/week9/우민지" />
     </key>
   </component>
@@ -141,6 +142,13 @@
       <workItem from="1712844327451" duration="1166000" />
       <workItem from="1712870857128" duration="1447000" />
       <workItem from="1712935116467" duration="3800000" />
+      <workItem from="1713009293520" duration="136000" />
+      <workItem from="1713277501353" duration="2427000" />
+      <workItem from="1713354119036" duration="1459000" />
+      <workItem from="1713629212302" duration="518000" />
+      <workItem from="1713881563869" duration="837000" />
+      <workItem from="1713963281803" duration="1612000" />
+      <workItem from="1714042152120" duration="887000" />
     </task>
     <servers />
   </component>
