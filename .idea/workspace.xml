@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cec4a6cb-ebd3-45eb-9468-a8ec99863245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/week14/우민지/[LeetCode] LRU Cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week14/우민지/[프로그래머스]요격시스템.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week14/우민지/[프로그래머스] 징검다리.py" beforeDir="false" afterPath="$PROJECT_DIR$/week14/우민지/[프로그래머스] 징검다리.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -148,7 +150,9 @@
       <workItem from="1713629212302" duration="518000" />
       <workItem from="1713881563869" duration="837000" />
       <workItem from="1713963281803" duration="1612000" />
-      <workItem from="1714042152120" duration="887000" />
+      <workItem from="1714042152120" duration="1088000" />
+      <workItem from="1714307895336" duration="1205000" />
+      <workItem from="1714479383429" duration="1355000" />
     </task>
     <servers />
   </component>
